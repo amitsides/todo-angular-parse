@@ -1,0 +1,18 @@
+<div  ng-controller="mainController">
+    <header>
+        <h1 class="page-header text-center bg-primary">ToDo List With AngularJS  & Parse.com</h1><Br/>
+        <!--<h1 class="page-header text-center bg-primary">Count: {{count}}</h1><Br/>-->
+        <p class="text-center">
+            <input class="add-input form-control inputWarning2" placeholder="I need to..." type="text" ng-model="taskTitle" ng-model-instant />
+            <button class="btn btn-lg btn-outline" ng-click="">REFRASH</button>
+            <button class="btn btn-lg btn-outline" ng-click="addTask()">Add TODO</button>
+        </p>
+    </header>
+    <div class="text-center">
+        <ul>
+            <li class="bg-danger" ng-repeat="task in tasks">
+                <a href="/#/task/{{task.id}}">{{task.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

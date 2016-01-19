@@ -1,0 +1,10 @@
+<div  ng-controller="taskController">
+    <h1 class="page-header text-center bg-warning">Task number #{{id}}</h1><button class="btn btn-lg btn-outline" ng-click="">Load Task</button>
+    <h1 class="page-header text-center bg-primary">Title: {{title}}</h1>
+    <h1 class="page-header text-center bg-success">Description: {{description}}</h1>
+
+
+    <input id="titleInput" class="form-control" type="text" value="{{title}}" ng-model="title" ng-model-instant /><Br/>
+    <input id="descriptionInput" class="form-control"  type="text" value="{{description}}" ng-model="description" ng-model-instant /><Br/>
+    <button class="btn btn-lg btn-outline" ng-click="updateTask()">Update</button>
+</div>
